@@ -46,7 +46,7 @@ int find_program(data_of_program *data)
 	}
 	free(data->tokens[0]);
 	data->tokens[0] = NULL;
-	free_array_of_pointer(dirs);
+	free_array_of_pointers(dirs);
 	return (code);
 }
 
@@ -104,7 +104,7 @@ int check_file(char *full_path)
 {
 	struct stat sb;
 
-	if (stast(full_path, &sb) != -1)
+	if (stat(full_path, &sb) != -1)
 	{
 		if (S_ISDIR(sb.st_mode) || access(full_path, X_OK))
 		{
