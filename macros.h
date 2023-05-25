@@ -57,4 +57,13 @@
 	"	unset\t[variable]\n"\
 	"	help\t[built_name]\n\n"
 
+#define HELP_LS_MSG "ls=\n"\
+"ls:\tls [OPTIONS] [FILES]\n\n"\
+"	List directory contents.\n\n"\
+"	Options:\n\n"\
+"	-a\tList all files, including hidden files.\n"\
+"	-l\tList files in long format.\n"\
+"	-R\tRecursively list subdirectories.\n\n"\
+"	FILES\tThe files to list. If no files are specified, the current directory is listed.\n\n"
+
 #endif
